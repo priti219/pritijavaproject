@@ -1,0 +1,1 @@
+java -cp C:\Users\pritig\IdeaProjects\pritijavaproject\bin;C:\Users\pritig\IdeaProjects\pritijavaproject\lib/* testng.xml

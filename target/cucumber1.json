@@ -1,0 +1,87 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7491855800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.beforeScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Go to AngularJS page",
+        "description": "",
+        "id": "todomvchomepage;go-to-angularjs-page",
+        "after": [
+          {
+            "result": {
+              "duration": 159602301,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HookClass.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 233387000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on ToDoMVC page",
+            "match": {
+              "location": "ToDoMVCMain.iAmOnToDoMVCPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1131116800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on AngularJS",
+            "match": {
+              "location": "ToDoMVCMain.iClickOnAngularJS()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 111955199,
+              "error_message": "java.lang.AssertionError: \nIncorrect Page TodoMVC expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:513)\r\n\tat org.testng.Assert.assertTrue(Assert.java:42)\r\n\tat com.unisuper.demo.pageclassfiles.ToDoMVCBaseClass.pageTitle(ToDoMVCBaseClass.java:23)\r\n\tat com.unisuper.demo.pageclassfiles.ToDoMVCHomePageClass.angularJSPageShouldBeDisplayed(ToDoMVCHomePageClass.java:25)\r\n\tat com.unisuper.demo.steps.ToDoMVCMain.angularJSPageShouldBeDisplayed(ToDoMVCMain.java:37)\r\n\tat ✽.Then AngularJS page should be displayed(src/test/java/com/unisuper/demo/features/ToDoMVCHomePage.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "AngularJS page should be displayed",
+            "match": {
+              "location": "ToDoMVCMain.angularJSPageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ToDoMVCHomePage",
+    "description": "",
+    "id": "todomvchomepage",
+    "keyword": "Feature",
+    "uri": "src/test/java/com/unisuper/demo/features/ToDoMVCHomePage.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@001"
+      }
+    ]
+  }
+]

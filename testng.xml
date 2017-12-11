@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--<suite name="Parallel Testing" parallel="tests" thread-count="2" >-->
+<suite name="Parallel Testing">
+    <listeners>
+        <listener class-name="com.unisuper.demo.report.TestNGExecutionListener"></listener>
+    </listeners>
+
+    <test name="ToDoMVC Home Page">
+        <!--<parameter name="browser" value="chrome"/>-->
+        <classes>
+            <class name="com.unisuper.demo.runner.ToDoMVCHomePage_Runner"/>
+        </classes>
+    </test>
+
+    <test name="ToDoMVC AngularJS Page">
+        <!--<parameter name="browser" value="ie"/>-->
+        <classes>
+            <class name="com.unisuper.demo.runner.ToDoMVCHomePage_Runner"/>
+        </classes>
+    </test>
+</suite>
